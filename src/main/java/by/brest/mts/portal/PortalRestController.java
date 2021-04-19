@@ -23,11 +23,11 @@ public class PortalRestController {
     @GetMapping("/persons")
     public List<Person> getPersons() {
         List<Person> persons = new ArrayList<>();
-        persons.add(new Person("Островский", "Руслан", 37, "Developer");
-        persons.add(new Person("Левченко", "Александр", 36, "Junior");
-        persons.add(new Person("Рагозинский", "Алексей", 35, "Junior");
-        persons.add(new Person("Якимчик", "Александр", 34, "Junior");
-        persons.add(new Person("Савицкий", "Владимир", 38, "Junior");
+        persons.add(new Person("Островский", "Руслан", 37, "Developer"));
+        persons.add(new Person("Левченко", "Александр", 36, "Junior"));
+        persons.add(new Person("Рагозинский", "Алексей", 35, "Junior"));
+        persons.add(new Person("Якимчик", "Александр", 34, "Junior"));
+        persons.add(new Person("Савицкий", "Владимир", 38, "Junior"));
         return persons;
     }
 
