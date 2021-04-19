@@ -31,8 +31,7 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", age=" + age +
                 ", position='" + position + '\'' +
@@ -55,3 +54,4 @@ public class Person {
         return position;
     }
 }
+
