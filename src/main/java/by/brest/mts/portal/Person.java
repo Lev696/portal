@@ -21,4 +21,37 @@ public class Person {
     public Person() {
     }
 
+    public Person(String name, String surname, int age, String position) {
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+        this.position = position;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", position='" + position + '\'' +
+                '}';
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getPosition() {
+        return position;
+    }
 }
