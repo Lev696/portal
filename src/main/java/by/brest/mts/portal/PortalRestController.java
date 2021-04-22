@@ -1,5 +1,6 @@
 package by.brest.mts.portal;
 
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,9 +10,15 @@ import java.util.List;
 @RestController
 public class PortalRestController {
 
+    @GetMapping("/test")
+    public String test(Model model) {
+        model.addAttribute("title", "Тестовая страница");
+        return "test";
+    }
+
     @GetMapping("/hello")
     public String homePage() {
-        System.out.println("hello");
+        System.out.println("hello - проверка вывода в консоль надписи из вкладки /hello");
         String someString = "проверка работоспособности ";
         return someString + " 5";
     }
