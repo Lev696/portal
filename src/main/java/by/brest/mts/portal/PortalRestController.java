@@ -10,12 +10,6 @@ import java.util.List;
 @RestController
 public class PortalRestController {
 
-    @GetMapping("/test")
-    public String test(Model model) {
-        model.addAttribute("title", "Тестовая страница");
-        return "test";
-    }
-
     @GetMapping("/hello")
     public String homePage() {
         System.out.println("hello - проверка вывода в консоль надписи из вкладки /hello");
