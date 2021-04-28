@@ -1,4 +1,4 @@
-package by.brest.mts.portal;
+package by.brest.mts.portal.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
