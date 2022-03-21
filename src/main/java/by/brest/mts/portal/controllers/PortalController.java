@@ -7,9 +7,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class PortalController {
-    @GetMapping("/test")
-    public String test(Model model) {
-        model.addAttribute("title", "Тестовая страница");
-        return "test";
+    @GetMapping("/")
+    public String home(Model model) {
+        model.addAttribute("title", "Главная страница");
+        return "home";
+    }
+    @GetMapping("/contacts")
+    public String contacts(Model model) {
+        model.addAttribute("title", "Контакты");
+        return "/contacts";
     }
 }
+ 
